@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+*.user
+*.suo
+*.swp
+.env
+.vscode/
+.idea/
+*.db
+*.sqlite
+*.vs/
+.vs
