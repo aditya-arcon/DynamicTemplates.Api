@@ -162,7 +162,7 @@ app.MapPost("/templates",
    .WithTags("Templates");
 
 app.MapGet("/templates",
-    [Authorize(Policy = "Reviewer")] async (AppDb db) =>
+    [Authorize(Policy = "Admin")] async (AppDb db) =>
         await db.Templates.OrderByDescending(t => t.CreatedAt).ToListAsync())
    .WithTags("Templates");
 
